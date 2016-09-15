@@ -38,7 +38,7 @@ def post_facebook_message(fbid, received_message):
                 "text": received_message[start:start+300]
             }
      })
-				else:
+				else :
 					response_msg1 = json.dumps(
         {"recipient":{"id":fbid}, 
             "message":{
@@ -56,21 +56,19 @@ def post_facebook_message(fbid, received_message):
 			msg_length = msg_length -1
 			print received_message
 	else:
-		response_msg1 = json.dumps(
+		try:
+			response_msg1 = json.dumps(
         {"recipient":{"id":fbid}, 
             "message":{
                 "text": received_message
             }
      })
-		try:
+			
 			status1 = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg1)
 			pprint(status1.json())
 
 		except:
-			print " RESPONSE NOT SEND "	
-
-
-
+			print "RESPONSE NOT SEND"
 
 class fb(generic.View):
 	def get(self, request, *args, **kwargs):
