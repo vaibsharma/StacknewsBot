@@ -54,7 +54,7 @@ def post_facebook_message(fbid, received_message):
 
 			start = start + 300
 			msg_length = msg_length -1
-	print received_message
+			print received_message
 	else:
 		response_msg1 = json.dumps(
         {"recipient":{"id":fbid}, 
