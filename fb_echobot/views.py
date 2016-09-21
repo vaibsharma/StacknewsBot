@@ -14,9 +14,9 @@ from bs4 import BeautifulSoup as BS
 
 
 # Create your views here.
-API_KEY = "00ed9d0a7061428493500c5d9bfb223e"
-PAGE_ACCESS_TOKEN = 'EAAIhB7QbAeEBAH0xBOZBSGX1mb0Gg0wMbiVZCEQuzAcXYgfpobDhgQ6EfK4pLwVoUn5vCfZCM6cCZCGgyOBjSGaBzNb6zDmVdZAaFx7ai2qCXmJswWw7tmxyUqnAyKCmw3Ga2dZCqTHyevArZA11dMuEI46xI3lRww3ZBHdoKOifoAZDZD'
-VERIFY_TOKEN = "vaibhavsharma"
+API_KEY = {API_KEY}
+PAGE_ACCESS_TOKEN = {Page_Access_Token}
+VERIFY_TOKEN = {verify_token}
 
 
 GREETINGS = {"name":1,"nice":0,"ok":0,"thank":0,"how are you":2,"fine ":3," talk":4,"hi":1,"hey":1,"hello":1,"afternoon":6,"morning":7,"night":8,"hafiz":9,"doing":10,"pokemon":11,"are smart":12,"no":13}
